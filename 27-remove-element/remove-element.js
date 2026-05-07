@@ -3,14 +3,15 @@
  * @param {number} val
  * @return {number}
  */
-var removeElement = function(nums, val) {
-let j=0;
-for(let i=0;i<nums.length;i++){
-    if(nums[i] !== val){
-        nums[j]=nums[i]
+var removeElement = function(arr, val) {
+     let i = 0;
+    let j = 0
+    while (j < arr.length) {
+        if (arr[j] !== val) {
+            arr[i] = arr[j]
+            i++
+        }
         j++
     }
-}
-return j
-}    
-    
+    return i
+};
