@@ -14,6 +14,6 @@ var isPalindrome = function(x) {
         c = Math.floor(c / 10);
 
     }
-    return sum===x|| x === Math.floor(sum / 10);
+    return sum===x|| c === Math.floor(sum / 10);
 
 };
