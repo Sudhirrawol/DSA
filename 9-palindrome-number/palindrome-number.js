@@ -3,6 +3,9 @@
  * @return {boolean}
  */
 var isPalindrome = function(x) {
+        if (x < 0 || (x % 10 === 0 && x !== 0)) {
+        return false
+    }
     let sum = 0
     let c= x
     while (c > 0) {
@@ -11,6 +14,6 @@ var isPalindrome = function(x) {
         c = Math.floor(c / 10);
 
     }
-    return sum===x;
+    return sum===x|| x === Math.floor(sum / 10);
 
 };
