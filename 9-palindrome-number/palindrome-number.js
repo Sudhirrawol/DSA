@@ -3,13 +3,14 @@
  * @return {boolean}
  */
 var isPalindrome = function(x) {
-let num1 = x;
-let total = 0;
-while (num1 > 0) {
-  let last_digit = num1 % 10;
-  //   console.log(last_digit);
-  total = total * 10 + last_digit;
-  num1 = Math.floor(num1 / 10);
-}
-return total === x
+    let sum = 0
+    let c= x
+    while (c > 0) {
+        let digit = c % 10;
+        sum = sum * 10 + digit;
+        c = Math.floor(c / 10);
+
+    }
+    return sum===x;
+
 };
